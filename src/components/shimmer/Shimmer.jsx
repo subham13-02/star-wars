@@ -1,20 +1,12 @@
 import "./shimmer.css";
-
+import { InfinitySpin } from  'react-loader-spinner';
 export const Shimmer = () => {
-  return (
-    <div className="shimmer-container">
-      {Array(6)
-        .fill("")
-        .map((e, index) => (
-          <div
-            key={index}
-            className="shimmer-card"
-          >
-            <div className="shimmer"></div>
-          </div>
-        ))}
-    </div>
-  );
+  return (<div className="loading"> 
+                <InfinitySpin 
+                    width='200'
+                    color="rgb(203,26,128)"
+                />
+    </div>)
 };
 
 export const ShimmerForList = () => {

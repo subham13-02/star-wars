@@ -8,7 +8,7 @@ const Card = ({ title, ind, icon }) => {
   return (
     <div className="card">
       <div className="image-container">
-        <img src="./welcome.png" className=""></img>
+        <img src="./hero.png" className="dash-main-image" />
       </div>
       <div className="card-foot">
         <div>
