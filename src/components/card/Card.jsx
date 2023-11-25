@@ -2,7 +2,8 @@ import { setDrop } from "../../store/dropSideBar/action";
 import "./Card.css";
 import { useDispatch } from "react-redux";
 
-const Card = ({ title, ind, icon }) => {
+const Card = (props) => {
+  const { title, ind, icon }=props;
   const dispatch = useDispatch();
 
   return (
