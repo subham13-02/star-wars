@@ -1,0 +1,91 @@
+.sideBar {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 14px 10px 16px;
+    gap: 10px;
+    min-width: 223px;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sideBar>.link>button {
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 8px 12px 8px 12px;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+
+.sideBar>.link>button:hover {
+    background-color: rgba(204, 26, 130, 0.1) !important;
+}
+
+.sideBar-bar {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: white;
+}
+
+.sideBar-bar>p {
+    font-size: 14px;
+}
+
+.change {
+    transition: all 0.5s ease-in-out;
+}
+
+.it {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    font-size: 10px;
+    row-gap: 10px;
+}
+
+.pad {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pad:hover {
+    background-color: rgba(0, 0, 255, 0.1) !important;
+    border-radius: 8px;
+}
+
+.pad>p {
+    margin-left: 5px;
+}
+
+.ch {
+    margin-left: auto;
+}
+
+.pad>img {
+    width: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .sidenotdis {
+        display: none;
+    }
+
+    .sidedis {
+        display: flex;
+    }
+}

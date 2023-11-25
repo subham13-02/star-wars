@@ -1,0 +1,32 @@
+.navbar-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 72px;
+    height: 36px;
+}
+
+.hamburger {
+    display: none;
+
+}
+
+@media screen and (max-width:600px) {
+    .hamburger {
+        display: flex;
+        color: white;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .hamburger>div {
+        width: 20px;
+        border: 1px solid white;
+        background-color: aqua;
+    }
+}
