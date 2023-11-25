@@ -1,4 +1,3 @@
-import React from "react";
 import "./sidecard.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setFalse } from "../../store/sidebar/action";
@@ -22,7 +21,7 @@ const SideCard = () => {
         </div>
         <div className="side-down">
           <h3>Image</h3>
-          <img src="./welcome.png" className="img-st"></img>
+          <img src="./hero.png" className="img-st"></img>
           <h3>{data.title ? " Title" : "Name"}</h3>
           <p>{data.title ? data.title : data.name}</p>
           <h3>{data.opening_crawl && "Plot summary"}</h3>
