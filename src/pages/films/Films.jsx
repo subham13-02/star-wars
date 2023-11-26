@@ -9,7 +9,7 @@ import { setSide } from "../../store/sidebarContent/action";
 import { setDF } from "../../store/dropSideBar/action";
 import Card from "../../components/cards/Card";
 import DropDown from "../../components/dropdown/Dropdown";
-import Loader from "../../components/loader/Loader";
+import Loader from "../../components/Loader/Loader";
 
 const Films = () => {
   const [grid, setGrid] = useState(true);
