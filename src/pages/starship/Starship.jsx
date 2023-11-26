@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Modal from "../../components/modal/Modal";
-import Sidebar from "../../components/sidebar/Sidebar";
-import SideCard from "../../components/sidecard/SideCard";
-import Card from "../../components/card/Card";
-import DropDown from "../../components/dropdown/Dropdown";
+import Modal from "../../components/Modal/Modal";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import SideCard from "../../components/Sidecard/SideCard";
+import Card from "../../components/Card/Card";
+import DropDown from "../../components/Dropdown/Dropdown";
 import { setTranslate } from "../../store/sidebar/action";
 import { setSide } from "../../store/sidebarContent/action";
 import { setDF } from "../../store/dropSideBar/action";

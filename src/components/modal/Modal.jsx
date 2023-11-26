@@ -11,7 +11,7 @@ import { setMF, setModal } from "../../store/modal/action";
 import { setTranslate } from "../../store/sidebar/action";
 
 const Modal = () => {
-  const { show, id } = useSelector((state) => state?.dropSidebar);
+  const { id } = useSelector((state) => state?.dropSidebar);
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -38,7 +38,6 @@ const Modal = () => {
     dispatch(setMF());
     dispatch(setTranslate(false));
   };
-  // const
   return (
     <div className="modal">
       <div>

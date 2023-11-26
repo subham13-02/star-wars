@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -37,7 +37,7 @@ function Sidebar() {
     }
   };
 
-  const handleClick = (item) => {
+  const handleClick = () => {
     setPage(!page);
     dispatch(setFalse());
     dispatch(setMenu());

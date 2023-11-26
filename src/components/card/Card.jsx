@@ -3,6 +3,7 @@ import "./Card.css";
 import { useDispatch } from "react-redux";
 
 const Card = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { title, ind, icon }=props;
   const dispatch = useDispatch();
 

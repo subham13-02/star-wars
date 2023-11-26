@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Modal from "../../components/modal/Modal";
-import Sidebar from "../../components/sidebar/Sidebar";
-import SideCard from "../../components/sidecard/SideCard";
+import Modal from "../../components/Modal/Modal";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import SideCard from "../../components/Sidecard/SideCard";
 import "./films.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setTranslate } from "../../store/sidebar/action";
 import { setSide } from "../../store/sidebarContent/action";
 import { setDF } from "../../store/dropSideBar/action";
-import Card from "../../components/card/Card";
-import DropDown from "../../components/dropdown/Dropdown";
-import { Shimmer } from "../../components/shimmer/Shimmer";
+import Card from "../../components/Card/Card";
+import DropDown from "../../components/Dropdown/Dropdown";
+import Loader from "../../components/Loader/Loader";
 
 const Films = () => {
   const [grid, setGrid] = useState(true);
@@ -27,11 +27,11 @@ const Films = () => {
     if (films.length === 0) {
       return (
         <>
-          <Shimmer />
+          <Loader />
         </>
       );
     }
-  
+  console.log(films);
 
   return (
     <div className="film">
@@ -57,9 +57,9 @@ const Films = () => {
         <div className="flim-head">
           <p>Films</p>
           <button className="film-btns" onClick={() => handleClick()}>
-            <img src="./fourdot.png" className={!grid ? "vl" : ""} />
+            <img src="./fourdot.png" className={!grid ? "grid-list" : ""} />
             {grid && <p className="text-film">Grid</p>}
-            <img src="./ham.png" className={grid ? "vl" : ""} />
+            <img src="./ham.png" className={grid ? "grid-list" : ""} />
             {!grid && <p className="text-film">List</p>}
           </button>
         </div>
