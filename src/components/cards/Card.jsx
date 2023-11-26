@@ -1,5 +1,5 @@
 import { setDrop } from "../../store/dropSideBar/action";
-import "./Card.css";
+import "./card.css";
 import { useDispatch } from "react-redux";
 
 const Card = (props) => {
