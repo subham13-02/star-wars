@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Modal from "../../components/Modal/Modal";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import SideCard from "../../components/Sidecard/SideCard";
+import Modal from "../../components/modal/Modal";
+import Sidebar from "../../components/sidebar/Sidebar";
+import SideCard from "../../components/sidecard/SideCard";
 import "./films.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setTranslate } from "../../store/sidebar/action";
 import { setSide } from "../../store/sidebarContent/action";
 import { setDF } from "../../store/dropSideBar/action";
-import Card from "../../components/Card/Card";
-import DropDown from "../../components/Dropdown/Dropdown";
-import Loader from "../../components/Loader/Loader";
+import Card from "../../components/cards/Card";
+import DropDown from "../../components/dropdown/Dropdown";
+import Loader from "../../components/loader/Loader";
 
 const Films = () => {
   const [grid, setGrid] = useState(true);
