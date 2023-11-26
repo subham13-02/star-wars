@@ -1,4 +1,4 @@
-import HomeCard from "../../components/Homecard/HomeCard";
+import HomeCard from "../../components/homecard/HomeCard";
 import Sidebar from "../../components/sidebar/Sidebar";
 import './landingPage.css'
 
