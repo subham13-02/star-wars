@@ -1,5 +1,5 @@
-import HomeCard from "../../components/Homecard/HomeCard";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import HomeCard from "../../components/homecard/HomeCard";
+import Sidebar from "../../components/sidebar/Sidebar";
 import './landingPage.css'
 
 const LandingPage = () => {

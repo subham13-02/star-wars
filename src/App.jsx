@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage/LandingPage";
+import LandingPage from "./pages/landingPage/LandingPage";
 import Films from "./pages/films/Films";
 import People from "./pages/people/People";
 import Planet from "./pages/planet/Planet";
